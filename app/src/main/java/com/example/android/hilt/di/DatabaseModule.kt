@@ -21,7 +21,7 @@ With the @InstallIn annotation we're indicating that the dependencies provided b
 object DatabaseModule {
     /*
      @Provides is used for types that cannot be constructor injected
-     (abstract classes, interfaces, classes that are not owned by the app - so third party classes
+     (abstract classes, classes that are not owned by the app - so third party classes
      like Room in this case)
      */
     @Provides
