@@ -14,8 +14,7 @@ import javax.inject.Singleton
 /*
 With the @InstallIn annotation we're indicating that the dependencies provided by this module
 (AppDatabase and LogDao), should be available throughout the entire application
- and should have a singleton scope, ensuring that only one instance of these dependencies
- is created and shared across the app.
+ and should have a singleton scope.
  */
 @InstallIn(SingletonComponent::class)
 @Module
