@@ -25,6 +25,9 @@ import com.example.android.hilt.navigator.AppNavigator
 import com.example.android.hilt.navigator.AppNavigatorImpl
 import com.example.android.hilt.util.DateFormatter
 
+/*After injecting LoggerLocalDataSource, dateFormatter and AppNavigator,
+* we no longer need the ServiceLocator
+*/
 class ServiceLocator(applicationContext: Context) {
 
     private val logsDatabase = Room.databaseBuilder(
