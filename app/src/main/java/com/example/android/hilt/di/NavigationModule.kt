@@ -11,7 +11,7 @@ import dagger.hilt.android.components.ActivityComponent
 * Explanation of why to use a different module for this
 * https://developer.android.com/codelabs/android-hilt?hl=en#7
 * */
-@InstallIn(ActivityComponent::class)
+@InstallIn(ActivityComponent::class) // We want the module to available to Activities
 @Module
 abstract class NavigationModule {
 
